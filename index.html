@@ -2,6 +2,7 @@
 <html lang="en">
   <link rel="stylesheet" href="src/style.css" />
   <head>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,7 +21,7 @@
   </head>
   <body>
     <h1>🧚‍♂️AI Poem Generator</h1>
-    <form>
+    <form id="form-input">
       ✨
       <input type="text" placeholder="Enter a subject" autofocus required />
 
@@ -28,15 +29,7 @@
       ✨
     </form>
     <div class="container">
-      <main>
-        poem line 1
-        <br />
-        poem line 2
-        <br />
-        poem line 3
-        <br />
-        poem line 4
-      </main>
+      <main id="poem"></main>
     </div>
     <footer>
       This page was coded with 🪄 by
