@@ -2,8 +2,6 @@ body{
     background: #fededc;
 }
 
-
-
 h1{
     font-family: "Abril Fatface", serif;
         font-weight: 400;
@@ -20,6 +18,15 @@ h1{
     text-align: center;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
+
+.hint{
+    font-size: 12px;
+    line-height: 1.5;
+    opacity:0.6;
+    margin-left:-70px;
+    margin-top:5px;
+}
+
 form{
     background-color: #fcf8f3;
     padding:20px;
@@ -29,6 +36,7 @@ form{
    text-align: center;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
+
 input{
     margin:0 auto;
     font-size: 15px;
@@ -53,6 +61,29 @@ input{
         font-optical-sizing: auto;
         font-weight: 600;
         font-style: normal;
+}
+
+.hidden{
+    display:none;
+}
+
+.ct-animate-blink {
+    animation: blink 1s infinite;
+    animation-fill-mode: both;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
 }
 
 footer{

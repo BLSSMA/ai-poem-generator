@@ -7,7 +7,6 @@ new Typewriter("#poem", {
 });
 }
 
-
 function poemGenerator(event){
 event.preventDefault();
 
@@ -17,9 +16,9 @@ let context = "you are a creative and romantic poem writer. Your objective is to
 let prompt = `user instructions are: generate a poem about ${instructions.value}` ;
 let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-console.log("Generating a poem");
-console.log(`Prompt: ${prompt}`);
-console.log(`Context: ${context}`);
+let poemElement = document.querySelector("#poem");
+poemElement.classList.remove("hidden");
+poemElement.innerHTML=`<div class="ct-animate-blink">Generating a poem about ${instructions.value}</div>`;
 
 axios.get(apiUrl).then(displayPoem);
 }
