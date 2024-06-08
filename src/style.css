@@ -6,8 +6,7 @@ h1{
     font-family: "Abril Fatface", serif;
         font-weight: 400;
         font-style: normal;
-    margin-top:40px;
-    margin:10px auto;
+    margin: 20px auto;
     color:#33493c;
     background-color: #fcf8f3;
     max-width: 600px;
@@ -17,6 +16,10 @@ h1{
     padding:0 13px;
     text-align: center;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.header{
+    margin-top:80px;
 }
 
 .hint{
@@ -32,7 +35,7 @@ form{
     padding:20px;
     max-width:600px;
     border-radius: 20px;
-    margin:0 auto;
+    margin:20px auto;
    text-align: center;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
@@ -61,6 +64,17 @@ input{
         font-optical-sizing: auto;
         font-weight: 600;
         font-style: normal;
+        border-left: 2px solid #698474;
+}
+
+.inputSection{
+    width: 300px;
+    border-color: #698474;
+}
+
+.button{
+    background-color:#698474;
+    color:#fcf8f3;
 }
 
 .hidden{
