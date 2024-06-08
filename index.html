@@ -2,6 +2,7 @@
 <html lang="en">
   <link rel="stylesheet" href="src/style.css" />
   <head>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,7 +24,14 @@
     <h1>🧚‍♂️AI Poem Generator</h1>
     <form id="form-input">
       ✨
-      <input type="text" placeholder="Enter a subject" autofocus required />
+      <input
+        type="text"
+        placeholder="Enter a subject"
+        autofocus
+        required
+        autocomplete="off"
+        id="user-instructions"
+      />
 
       <input type="submit" placeholder="submit" />
       ✨
